@@ -13,8 +13,8 @@ services:
     todo_react:
         image: "244392073887.dkr.ecr.us-east-1.amazonaws.com/techpro-repo/todo-app:react"
         restart: always
-        environment:
-            REACT_APP_BASE_URL: http://${NODE_IP}:5000/
+        # environment:
+        #     REACT_APP_BASE_URL: http://${NODE_IP}:5000/
         depends_on:
             - todo_node
             - todo_postgre
