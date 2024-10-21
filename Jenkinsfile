@@ -97,7 +97,7 @@ pipeline {
 
         stage('Destroy the infrastructure'){
             steps{
-                timeout(time:15, unit:'MINUTES'){
+                timeout(time:5, unit:'DAYS'){
                     input message:'Approve terminate'
                 }
                 sh """
